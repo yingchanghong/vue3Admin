@@ -1,0 +1,16 @@
+import { createApp } from 'vue';
+import App from './App.vue';
+import Router from './router';
+import axios from 'axios';
+import request from './utils/request';
+import storage from './utils/storage';
+import ElementPlus from 'element-plus';
+import config from './config';
+import 'element-plus/lib/theme-chalk/index.css';
+const app = createApp(App);
+app.use(Router);
+app.use(ElementPlus);
+app.config.globalProperties.$request = request;
+app.config.globalProperties.$storage = storage;
+// console.log(import.meta.env);
+app.mount('#app');
