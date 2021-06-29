@@ -1,0 +1,17 @@
+[2021-06-28T07:43:07.466] [ERROR] error - ReferenceError: ctx is not defined
+    at E:\项目\vue3\vue3Admin\vue3_Service\app.js:15:3
+    at dispatch (E:\项目\vue3\vue3Admin\vue3_Service\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\项目\vue3\vue3Admin\vue3_Service\node_modules\koa\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (E:\项目\vue3\vue3Admin\vue3_Service\node_modules\koa\lib\application.js:168:12)
+    at Server.handleRequest (E:\项目\vue3\vue3Admin\vue3_Service\node_modules\koa\lib\application.js:150:19)
+    at Server.emit (events.js:310:20)
+    at parserOnIncoming (_http_server.js:786:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:119:17)
+[2021-06-28T07:43:37.669] [ERROR] error - ReferenceError: ctx is not defined
+    at E:\项目\vue3\vue3Admin\vue3_Service\app.js:37:3
+    at dispatch (E:\项目\vue3\vue3Admin\vue3_Service\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\项目\vue3\vue3Admin\vue3_Service\app.js:33:9
+    at dispatch (E:\项目\vue3\vue3Admin\vue3_Service\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at views (E:\项目\vue3\vue3Admin\vue3_Service\node_modules\koa-views\src\index.js:91:12)
+    at dispatch (E:\项目\vue3\vue3Admin\vue3_Service\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at serve (E:\项目\vue3\vue3Admin\vue3_Service\node_modules\koa-static\index.js:53:15)

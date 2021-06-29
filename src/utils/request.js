@@ -27,7 +27,7 @@ http.interceptors.request.use(req => {
 http.interceptors.response.use(res => {
   const { code, data, msg } = res.data;
   if (code === 200) {
-    return data;
+    return res.data;
   } else if (code === 40001) {
     ElMessage.error(tokenInvolid);
     setTimeout(() => {
@@ -45,6 +45,7 @@ http.interceptors.response.use(res => {
  * @param {object} options
  */
 function request(options) {
+  console.log('optio', options);
   options.method = options.method || 'get';
   if (options.method.toLowerCase() === 'get') {
     options.params = options.data;

@@ -10,6 +10,7 @@ const routes = [
     meta: {
       title: '首页',
     },
+
     component: Home,
     redirect: '/welcome',
     children: [
@@ -31,6 +32,14 @@ const routes = [
       },
       // { name: '', path: '/', component: Home }],
     ],
+  },
+  {
+    name: 'logins',
+    path: '/logins',
+    meta: {
+      title: '登录页',
+    },
+    component: Login,
   },
 ];
 const router = createRouter({
